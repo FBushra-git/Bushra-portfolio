@@ -126,3 +126,103 @@
   .nav-item { padding: 0.5rem; }
   .book-call-btn { padding: 0.5rem; }
 }
+.navigation {
+  position: fixed;
+  top: 20px;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  width: 95%;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.nav-container {
+  background: var(--bg-card);
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+  border-radius: 50px;
+  padding: 0.6rem 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid var(--border-color);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* Logo Visibility */
+.nav-logo {
+  font-weight: 800;
+  font-size: 1.2rem;
+  color: var(--text-primary); /* Automatically black in light theme */
+}
+
+.nav-logo span {
+  color: var(--primary-purple);
+}
+
+.nav-menu {
+  display: flex;
+  list-style: none;
+  gap: 0.5rem;
+  margin: 0;
+}
+
+.nav-item {
+  color: var(--text-secondary);
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 0.85rem;
+  padding: 0.5rem 0.8rem;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  transition: all 0.3s ease;
+}
+
+.nav-item:hover, .nav-item.active {
+  color: var(--primary-purple);
+  background: rgba(139, 92, 246, 0.1);
+}
+
+/* --- RESPONSIVE MEDIA QUERIES --- */
+
+/* Tablets - Hide text labels to save space */
+@media (max-width: 1024px) {
+  .nav-label { display: none; }
+  .nav-container { padding: 0.5rem 1rem; }
+}
+
+/* Mobile Devices - Switch to Bottom Nav for better UX */
+@media (max-width: 768px) {
+  .navigation {
+    top: auto;
+    bottom: 15px; /* Moves to bottom */
+    width: 92%;
+  }
+
+  .nav-logo, .btn-text {
+    display: none; /* Hide logo/text to prevent overflow */
+  }
+
+  .nav-container {
+    justify-content: center;
+    padding: 0.4rem;
+  }
+
+  .nav-menu {
+    width: 100%;
+    justify-content: space-around;
+  }
+
+  .nav-item {
+    font-size: 1.2rem; /* Make icons larger for fingers */
+    padding: 0.7rem;
+  }
+  
+  .theme-toggle-wrapper {
+    border-left: none;
+    padding-left: 0.5rem;
+  }
+}
