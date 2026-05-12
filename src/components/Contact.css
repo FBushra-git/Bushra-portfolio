@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap');
+
+.contact-section {
+  padding: 100px 20px 0;
+  font-family: 'Inter', sans-serif !important;
+  color: white;
+}
+
+.contact-container { max-width: 1200px; margin: 0 auto; }
+.contact-header { text-align: center; margin-bottom: 60px; }
+.section-title { font-size: 3rem; font-weight: 800; margin: 0; }
+.highlight { color: #8b5cf6; }
+.contact-subtitle { color: #9ca3af; margin-top: 10px; }
+
+/* Grid Layout */
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.6fr;
+  gap: 40px;
+  margin-bottom: 100px;
+}
+
+/* Glassmorphism */
+.contact-info-glass, .contact-form-glass {
+  background: rgba(255, 255, 255, 0.03);
+  backdrop-filter: blur(15px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 24px;
+  padding: 50px 40px;
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-info-glass { justify-content: space-between; }
+
+/* Info Items */
+.info-item { display: flex; gap: 20px; margin-bottom: 35px; align-items: flex-start; }
+.info-icon {
+  width: 50px; height: 50px; background: rgba(139, 92, 246, 0.1);
+  border: 1px solid rgba(139, 92, 246, 0.3); border-radius: 12px;
+  display: flex; align-items: center; justify-content: center; color: #a78bfa;
+}
+.info-item h4 { margin: 0; font-size: 0.9rem; color: #8b5cf6; text-transform: uppercase; letter-spacing: 1px; }
+.info-link, .info-item p { color: #d1d5db; text-decoration: none; font-size: 1rem; margin-top: 4px; display: block; }
+.info-link:hover { color: white; }
+
+/* Social Row */
+.social-links-row { display: flex; gap: 15px; padding-top: 30px; border-top: 1px solid rgba(255, 255, 255, 0.05); }
+.social-pill {
+  width: 45px; height: 45px; background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1); border-radius: 50%;
+  display: flex; align-items: center; justify-content: center; color: white; transition: 0.3s;
+}
+.social-pill:hover { background: #8b5cf6; transform: translateY(-5px); }
+
+/* Form */
+.modern-form { display: flex; flex-direction: column; gap: 25px; }
+.input-row { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+.contact-form-glass input, .contact-form-glass textarea {
+  width: 100%; background: rgba(0, 0, 0, 0.2); border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px; padding: 18px; color: white; font-family: 'Inter', sans-serif !important;
+}
+.contact-form-glass input:focus, .contact-form-glass textarea:focus { border-color: #8b5cf6; outline: none; }
+
+.submit-btn {
+  background: #8b5cf6; color: white; border: none; padding: 18px; border-radius: 12px;
+  font-weight: 700; cursor: pointer; display: flex; align-items: center; justify-content: center; gap: 10px; transition: 0.3s;
+}
+.submit-btn:hover { background: #7c3aed; transform: translateY(-2px); box-shadow: 0 10px 20px rgba(139, 92, 246, 0.3); }
+
+/* Footer */
+.footer-glass { padding: 40px; text-align: center; border-top: 1px solid rgba(255, 255, 255, 0.1); background: rgba(0, 0, 0, 0.2); }
+.footer-glass p { color: #6b7280; font-size: 0.9rem; margin: 0; }
+
+@media (max-width: 968px) {
+  .contact-grid { grid-template-columns: 1fr; }
+  .input-row { grid-template-columns: 1fr; }
+}
+.contact {
+  background: var(--bg-primary); /* If this is solid, you won't see the waves behind it */
+}

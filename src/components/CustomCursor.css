@@ -1,0 +1,42 @@
+.custom-cursor,
+.custom-cursor-follower {
+  position: fixed;
+  top: 0;
+  left: 0;
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 9999;
+}
+
+/* The Outer Ring: Glassmorphism + Glow */
+.custom-cursor {
+  width: 40px;
+  height: 40px;
+  border: 1.5px solid rgba(139, 92, 246, 0.5);
+  background: rgba(139, 92, 246, 0.05);
+  backdrop-filter: blur(2px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: border-color 0.3s ease;
+}
+
+/* The Inner Nucleus: Gradient + Shadow */
+.custom-cursor-follower {
+  width: 8px;
+  height: 8px;
+  background: radial-gradient(circle, #fff 0%, var(--primary-color, #8b5cf6) 70%);
+  box-shadow: 0 0 15px var(--primary-color, #8b5cf6),
+              0 0 30px rgba(139, 92, 246, 0.4);
+}
+
+/* Magnetic effect styling for hover */
+.custom-cursor.hovering {
+  border-color: #22d3ee; /* Cyan highlight on hover */
+  border-width: 1px;
+  background: rgba(34, 211, 238, 0.1);
+}
+
+@media (max-width: 768px) {
+  .custom-cursor, .custom-cursor-follower { display: none; }
+}

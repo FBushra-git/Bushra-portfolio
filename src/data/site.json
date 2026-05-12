@@ -1,0 +1,43 @@
+{
+  "siteUrl": "https://fbushra-git.github.io/Bushra-portfolio/",
+  "person": {
+    "displayName": "Bushra Tasmin",
+    "copyrightName": "Bushra Tasmin"
+  },
+  "contact": {
+    "email": "bushratasmin5202@gmail.com",
+    "linkedin": "https://www.linkedin.com/in/nusrat-tasmin-bushra/",
+    "github": "https://github.com/FBushra-git",
+    "telegram": ""
+  },
+  "hero": {
+    "roles": [
+      "Full Stack Developer",
+      "React Developer",
+      "Next.js Developer",
+      "Node.js Developer",
+      "CS Student"
+    ],
+    "tagline": "Building scalable and modern web applications",
+    "description": "Computer Science student and Full Stack Developer experienced in both frontend and backend development. Passionate about building scalable web applications using React, Next.js, Node.js, and modern web technologies."
+  },
+  "seo": {
+    "title": "Bushra Tasmin | Full Stack Developer Portfolio | React, Next.js & Node.js",
+    "description": "Portfolio of Bushra Tasmin showcasing full stack projects built with React, Next.js, Node.js, and modern web technologies.",
+    "keywords": [
+      "full stack developer portfolio",
+      "react developer",
+      "next js developer",
+      "node js developer",
+      "web developer portfolio",
+      "bushra tasmin portfolio",
+      "javascript developer",
+      "full stack projects",
+      "github portfolio"
+    ],
+    "author": "Bushra Tasmin",
+    "twitterCard": "summary_large_image",
+    "twitterSite": "",
+    "jobTitle": "Full Stack Developer"
+  }
+}

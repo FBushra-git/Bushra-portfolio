@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+:root {
+  --nav-purple: #8b5cf6; /* Standard Purple */
+  --nav-purple-glow: rgba(139, 92, 246, 0.3);
+  --nav-bg: rgba(15, 23, 42, 0.9);
+}
+
+.navigation {
+  position: fixed;
+  top: 20px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  z-index: 1000;
+  width: 95%;
+  max-width: 1100px;
+  font-family: 'Inter', sans-serif; /* Explicitly Inter */
+}
+
+.nav-container {
+  background: var(--nav-bg);
+  backdrop-filter: blur(15px);
+  border-radius: 50px;
+  padding: 0.5rem 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+  border: 1px solid var(--nav-purple-glow); /* Changed from blue to purple */
+}
+
+/* Logo Styling - Purple Accent */
+.nav-logo {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #fff;
+  flex: 0 0 auto;
+}
+
+.nav-logo span { 
+  color: var(--nav-purple); /* Purple color */
+}
+
+.nav-menu-wrapper {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.nav-menu {
+  display: flex;
+  list-style: none;
+  gap: 0.2rem;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-item {
+  color: rgba(148, 163, 184, 0.8);
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 0.82rem; /* Small font */
+  padding: 0.4rem 0.8rem;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  border-radius: 30px;
+  transition: all 0.2s ease;
+}
+
+/* Hover & Active states now Purple */
+.nav-item:hover, .nav-item.active {
+  color: var(--nav-purple);
+  background: rgba(139, 92, 246, 0.1);
+}
+
+.nav-icon { font-size: 0.9rem; }
+
+.nav-actions {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  flex: 0 0 auto;
+}
+
+/* Book Call Button - Purple theme */
+.book-call-btn {
+  background: var(--nav-purple);
+  color: #fff;
+  padding: 0.4rem 1rem;
+  border-radius: 30px;
+  font-weight: 600;
+  font-size: 0.78rem; /* Small font */
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  text-decoration: none;
+  box-shadow: 0 4px 15px rgba(139, 92, 246, 0.2);
+}
+
+.book-call-btn:hover {
+  filter: brightness(1.1);
+  transform: translateY(-1px);
+}
+
+.theme-toggle-wrapper {
+  padding-left: 0.8rem;
+  border-left: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* --- Mobile Logic --- */
+@media (max-width: 1024px) {
+  .nav-logo { display: none; }
+}
+
+@media (max-width: 768px) {
+  .nav-label, .btn-text { display: none; }
+  .nav-container {
+    width: fit-content;
+    padding: 0.4rem 0.8rem;
+    gap: 0.5rem;
+  }
+  .nav-item { padding: 0.5rem; }
+  .book-call-btn { padding: 0.5rem; }
+}

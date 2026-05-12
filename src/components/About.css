@@ -1,0 +1,155 @@
+.about {
+  background: var(--bg-primary); /* Assuming dark slate/navy background */
+  position: relative;
+  padding: 8rem 0;
+  overflow: hidden;
+  font-family: 'Inter', sans-serif;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 800;
+  margin-bottom: 4rem;
+  color: #fff;
+}
+
+.title-highlight {
+  color: #8b5cf6; /* Your Purple theme */
+}
+
+/* Floating Icon Styling */
+.floating-icons {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.floating-icon {
+  position: absolute;
+  width: 55px;
+  height: 55px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(30, 41, 59, 0.5);
+  border: 1px solid rgba(139, 92, 246, 0.3);
+  border-radius: 12px;
+  backdrop-filter: blur(8px);
+  color: #8b5cf6;
+  font-size: 1.8rem;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+/* Text Content Styling */
+.about-content {
+  position: relative;
+  z-index: 1;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.about-content p {
+  font-size: 1.15rem;
+  line-height: 1.8;
+  color: #94a3b8; /* Muted text */
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.about-content p strong {
+  color: #fff;
+  font-weight: 600;
+  background: linear-gradient(to right, #8b5cf6, #d8b4fe);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Quick Stats Bar */
+.about-stats {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    margin-top: 3rem;
+}
+
+.stat-item {
+    text-align: center;
+    border-left: 2px solid #8b5cf6;
+    padding-left: 1.5rem;
+}
+
+.stat-number {
+    display: block;
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: #fff;
+}
+
+.stat-text {
+    font-size: 0.85rem;
+    color: #8b5cf6;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Responsive Fixes */
+@media (max-width: 768px) {
+  .section-title { font-size: 2rem; }
+  .about-content p { font-size: 1rem; text-align: left; }
+  .floating-icons { opacity: 0.4; } /* Lower opacity on mobile to reduce clutter */
+  .about-stats { flex-direction: column; gap: 1.5rem; align-items: center; }
+}
+
+@media (max-width: 480px) {
+    .floating-icons { display: none; } /* Remove for very small screens */
+}
+
+.about-stats {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 50px;
+  flex-wrap: wrap;
+}
+
+.stat-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  min-width: 120px;
+}
+
+.stat-icon {
+  font-size: 2.2rem;
+  color: #8b5cf6; /* Your Theme Purple */
+  margin-bottom: 12px;
+  filter: drop-shadow(0 0 8px rgba(139, 92, 246, 0.4));
+}
+
+.stat-number {
+  font-size: 1.2rem;
+  font-weight: 800;
+  color: #fff;
+  display: block;
+}
+
+.stat-text {
+  font-size: 0.85rem;
+  color: #94a3b8;
+  font-weight: 500;
+}
+
+@media (max-width: 768px) {
+  .about-stats {
+    gap: 20px;
+  }
+}

@@ -1,0 +1,46 @@
+.theme-toggle {
+  background: transparent;
+  border: none;
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  color: var(--text-primary);
+  padding: 0;
+}
+
+.theme-toggle:hover {
+  transform: scale(1.15);
+}
+
+.theme-icon {
+  font-size: 1.25rem;
+  transition: transform 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.theme-toggle:hover .theme-icon {
+  transform: rotate(15deg);
+}
+
+/* Animation when switching */
+.theme-icon svg {
+  animation: iconFadeIn 0.3s ease;
+}
+
+@keyframes iconFadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.8) rotate(-15deg);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1) rotate(0deg);
+  }
+}

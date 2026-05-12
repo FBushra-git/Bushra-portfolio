@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+
+.edu-section {
+  padding: 100px 0;
+  background: transparent;
+  font-family: 'Inter', sans-serif;
+  color: var(--text-main);
+}
+
+.edu-container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.edu-header {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.edu-title {
+  font-size: 3rem;
+  font-weight: 800;
+  color: var(--text-main);
+}
+
+.edu-highlight {
+  background: var(--resume-gradient, linear-gradient(135deg, #8b5cf6 0%, #8b5cf6 100%));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.edu-underline {
+  width: 50px;
+  height: 4px;
+  background: var(--resume-gradient, linear-gradient(135deg, #8b5cf6 0%, #8b5cf6 100%));
+  margin: 15px auto;
+  border-radius: 2px;
+}
+
+.edu-list {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.edu-card {
+  display: flex;
+  gap: 30px;
+  background: var(--card-bg, rgba(17, 24, 39, 0.6));
+  border: 1px solid var(--border-color, rgba(255, 255, 255, 0.08));
+  padding: 40px;
+  border-radius: 24px;
+  backdrop-filter: blur(12px);
+  transition: 0.4s ease;
+}
+
+.edu-card:hover {
+  transform: translateX(10px);
+  border-color: #8b5cf6;
+}
+
+.edu-icon-container {
+  font-size: 2.5rem;
+  color: #5839a0;
+  min-width: 60px;
+}
+
+.edu-tag {
+  background: rgba(59, 130, 246, 0.15);
+  color: #8b5cf6;
+  padding: 5px 15px;
+  border-radius: 100px;
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.edu-details h3 {
+  margin: 12px 0 5px 0;
+  font-size: 1.5rem;
+  color: var(--text-main);
+}
+
+.edu-details h4 {
+  color: #8b5cf6;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+
+.edu-details p {
+  color: var(--text-dim);
+  line-height: 1.6;
+}

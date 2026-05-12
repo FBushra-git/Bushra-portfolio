@@ -1,0 +1,63 @@
+[
+  {
+    "title": "Tiles Gallery",
+    "subtitle": "Interactive Product Showcase",
+    "description": "A modern tile gallery web application built with Next.js featuring responsive layouts, smooth UI animations, category-based product browsing, and an engaging user experience focused on performance and clean design.",
+    "image": "tiles-gallery.png",
+    "categories": ["Frontend"],
+    "technologies": [
+      "Next.js",
+      "React",
+      "Tailwind CSS",
+      "Framer Motion",
+      "Swiper.js",
+      "React Icons",
+      "JavaScript (ES6+)",
+      "Vercel"
+    ],
+    "liveLink": "https://tiles-gallery-plum.vercel.app/",
+    "githubLink": "https://github.com/FBushra-git/Assignment-08-Tiles-Gallery",
+    "challenges": "Implementing responsive gallery layouts with smooth animations, optimizing component rendering in Next.js, and maintaining visual consistency across different devices and screen sizes.",
+    "improvements": "Future improvements include backend integration for dynamic product management, advanced filtering and search functionality, authentication systems, and interactive product detail pages."
+  },
+  {
+    "title": "KeenKeeper",
+    "subtitle": "Task & Productivity Tracker",
+    "description": "A responsive productivity and task management application designed to help users organize daily activities, manage tasks efficiently, and improve workflow through a clean and interactive interface.",
+    "image": "keen.png",
+    "categories": ["Frontend"],
+    "technologies": [
+      "React",
+      "JavaScript",
+      "CSS3",
+      "React Hooks",
+      "React Icons",
+      "Local Storage",
+      "Netlify"
+    ],
+    "liveLink": "https://keenkeeper-bushra.netlify.app/",
+    "githubLink": "https://github.com/FBushra-git/Assignment-07",
+    "challenges": "Managing application state efficiently while ensuring persistent task data storage and maintaining a responsive user experience across desktop and mobile devices.",
+    "improvements": "Future plans include drag-and-drop task management, authentication features, cloud synchronization, calendar integration, and dark/light mode support."
+  },
+  {
+    "title": "DigiTools",
+    "subtitle": "Digital Resource Hub",
+    "description": "A centralized digital tools platform providing users with quick access to useful web utilities through a clean, responsive, and user-friendly interface focused on simplicity and accessibility.",
+    "image": "digitools.png",
+    "categories": ["Frontend"],
+    "technologies": [
+      "React",
+      "Tailwind CSS",
+      "JavaScript",
+      "Lucide React",
+      "HTML5",
+      "Responsive Design",
+      "Netlify"
+    ],
+    "liveLink": "https://digitools-bushra-1.netlify.app/",
+    "githubLink": "https://github.com/FBushra-git/Assignment_06",
+    "challenges": "Designing a scalable and visually consistent interface while organizing multiple utility components in a clean and accessible layout.",
+    "improvements": "Future updates include adding more advanced digital utilities, Progressive Web App (PWA) support, theme customization, and performance optimization for faster loading."
+  }
+]
